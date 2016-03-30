@@ -32,13 +32,15 @@ class Student implements Comparable {
 		if (cgpa == s.cgpa) {
 			if (fname.equals(s.fname)) {
 				return id - s.id;
-			} else {
+			}
+			else {
 				return fname.compareTo(s.fname);
 			}
 		} else {
 			if (s.cgpa - cgpa > 0) {
 				return 1;
-			} else {
+			}
+			else {
 				return -1;
 			}
 		}
